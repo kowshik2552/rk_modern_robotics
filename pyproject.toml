@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+license = { file = "LICENSE" }
+name = "rk_modern_robotics"
+version = "0.1.0"
+description = "Symbolic and numeric screw-theory robotics library based on Modern Robotics"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "sympy",
+    "numpy"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
